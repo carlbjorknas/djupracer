@@ -22,7 +22,7 @@ def reward_function(params):
     if pos_reward < 1.0:
         return pos_reward
 
-    heading_reward = reward_for_heading()
+    heading_reward = reward_for_heading(heading, prev_waypoint, next_waypoint)
 
     return heading_reward
 
